@@ -5,7 +5,8 @@
 `0x5B57a230bbF13509Dd8351953833a254D925B6ba`
 # 4- ABI used for the contract call
 
-`[ {
+```javascript
+[ {
       "inputs": [],
       "stateMutability": "payable",
       "type": "constructor"
@@ -36,4 +37,4 @@
       "stateMutability": "view",
       "type": "function"
     }
-]`
+]
