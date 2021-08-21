@@ -297,7 +297,7 @@ export function App() {
           </Col>
           <Col>
             <Button onClick={notarize} disabled={!contract}>
-              Notrize the Document
+              Notarize the Document
             </Button>
           </Col>
         </Row>
