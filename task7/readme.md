@@ -19,7 +19,7 @@
   ### 3-3 ABI deployed of the smart contract
   
   ```javascript 
-[
+"abi": [
     {
       "anonymous": false,
       "inputs": [
