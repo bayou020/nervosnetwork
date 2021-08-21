@@ -21,7 +21,7 @@ export class NotarizingDocumentWrapper {
     get isDeployed() {
         return Boolean(this.address);
     }
-
+   
     async checkDocument(document: string ,fromAddress: string) {
         const data = await this.contract.methods.checkDocument(document).call({ from: fromAddress });
 
@@ -63,5 +63,9 @@ export class NotarizingDocumentWrapper {
     useDeployed(contractAddress: string) {
         this.address = contractAddress;
         this.contract.options.address = contractAddress;
+    }
+  async  owner() {
+        const data = await this.contract.methods.owner();
+        return (data)
     }
 }

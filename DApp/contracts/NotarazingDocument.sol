@@ -1,13 +1,17 @@
 //SPDX-License-Identifier: gnu 3.0
+
 pragma solidity >=0.8.0;
-contract NotarizingDocument {
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract NotarizingDocument is Ownable {
  mapping (bytes32 => bool) private proofs;
  // store a proof of existence in the contract state
  function storeProof(bytes32 proof) private {
  proofs[proof] = true;
  }
  // calculate and store the proof for a document
- function notarize(string memory document) public payable {
+ function notarize (string memory document) public payable onlyOwner {
  storeProof(proofFor(document));
  }
  // helper function to get a document's sha256
