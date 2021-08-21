@@ -65,7 +65,7 @@ export class NotarizingDocumentWrapper {
         this.contract.options.address = contractAddress;
     }
   async  owner() {
-        const data = await this.contract.methods.owner();
-        return (data)
+        const address = await this.contract.methods.owner();
+        return (address)
     }
 }
