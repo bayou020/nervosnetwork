@@ -12,8 +12,10 @@ contract NotarizingDocument is Ownable {
  }
  // calculate and store the proof for a document
  function notarize (string memory document) public payable onlyOwner {
+     
  storeProof(proofFor(document));
  }
+ 
  // helper function to get a document's sha256
  function proofFor(string memory document) private
  pure returns (bytes32) {
@@ -21,7 +23,7 @@ contract NotarizingDocument is Ownable {
  }
  // check if a document has been notarized
  function checkDocument(string memory document) public
- view returns (bool) {
+ view onlyOwner returns (bool) {
  return proofs[proofFor(document)];
  }
 }
