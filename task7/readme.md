@@ -6,9 +6,7 @@
 
 
 ### 2-DApp Github Link
-```
-https://github.com/bayou020/nervosnetwork/tree/main/DApp
-```
+[Link] (https://github.com/bayou020/nervosnetwork/tree/main/DApp)
 ### 3-1 deployed SmartContract address 
 ```
  0x798e6E191414dc4f1a33836eFF0119C002B00CB2
