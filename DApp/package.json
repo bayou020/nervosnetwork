@@ -26,6 +26,7 @@
     "types": "dist/js/src/index.d.ts",
     "dependencies": {
         "@polyjuice-provider/web3": "0.0.1-rc6",
+        "bootstrap": "^5.1.0",
         "nervos-godwoken-integration": "0.0.6",
         "react-bootstrap": "^1.6.1",
         "bootstrap": "^5.1.0",
