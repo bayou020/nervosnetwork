@@ -1,5 +1,5 @@
 {
-    "name": "blockchain-workshop",
+    "name": "notarizing-dapp",
     "description": "",
     "license": "MIT",
     "author": "",
@@ -25,6 +25,7 @@
     },
     "types": "dist/js/src/index.d.ts",
     "dependencies": {
+        "@openzeppelin/contracts": "^4.3.0",
         "@polyjuice-provider/web3": "0.0.1-rc6",
         "nervos-godwoken-integration": "0.0.6",
         "react-bootstrap": "^1.6.1",
