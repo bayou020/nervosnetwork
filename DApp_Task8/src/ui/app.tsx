@@ -140,7 +140,7 @@ export function App() {
       setDeployTxHash(transactionHash);
       setExistingContractAddress(_contract.address);
       toast(
-        "Successfully deployed a smart-contract. You can now proceed to get or set the value in a smart contract.",
+        "Successfully deployed a smart-contract. You can now proceed to notarize or check a document in a smart contract.",
         { type: "success" }
       );
     } catch (error) {
@@ -173,7 +173,7 @@ export function App() {
       setTransactionInProgress(true);
       await contract.notarize(notarizedDocument, account);
       toast(
-        "Successfully set latest stored value. You can refresh the read value now manually.",
+        "Successfully Notarized the document. You can refresh the check the document now manually.",
         { type: "success" }
       );
     } catch (error) {
